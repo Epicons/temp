@@ -37,14 +37,19 @@
                     $("#global_button").addClass("active");
                     $("#national_image").hide();
                     $("#global_image").fadeIn();
-                    
-
                 } else{
                     $("#national_button").addClass("active");
                     $("#global_button").removeClass("active");
                     $("#global_image").hide();
                     $("#national_image").fadeIn();
                 }
+            }
+
+            function changeProjects(id){
+                $(".project_button").removeClass("active");
+                $("#"+id).addClass("active");
+                $(".projects_display").hide();
+                $("#"+id.split("_")[0]).fadeIn();
             }
         </script>
 
@@ -444,6 +449,646 @@
     </div>
     </div>
 
+    <div class="projects_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2" style="padding-left: 15px;">
+                    <hr style="width: 20px; margin: unset; height: 2px; background-color: #FFD231;">
+                </div>
+                <div class="col-10"
+                    style="padding-left: 10px; font-size: 12px; font-weight: 600; text-transform: uppercase;">
+                    WHAT WE DO
+                </div>
+            </div>
+            <div class="row mb-4">
+                <h3 class="projects_area_title m-0" style="padding-left: 15px;">
+                    Our <span>Projects</span>
+                </h3>
+            </div>
+            <div class="row mb-4">
+                <button onclick="changeProjects(this.id)" id="industrial_button" class="project_button active">Industrial</button>
+                <button onclick="changeProjects(this.id)" id="commercial_button" class="project_button">Commercial</button>
+                <button onclick="changeProjects(this.id)" id="residential_button" class="project_button">Residential</button>
+                <button onclick="changeProjects(this.id)" id="repairs_button" class="project_button">Repairs</button>
+                <button onclick="changeProjects(this.id)" id="hospitality_button" class="project_button">Hospitality</button>
+                <button onclick="changeProjects(this.id)" id="institutions_button" class="project_button">Institutions</button>
+            </div>
+            <div class="row mb-4 projects_display" id="industrial">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/1.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/1.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/1.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/1.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <div class="row mb-4 projects_display" id="commercial">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/2.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/2.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/2.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/2.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <div class="row mb-4 projects_display" id="residential">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/3.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/3.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/3.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/3.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <div class="row mb-4 projects_display" id="repairs">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/4.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/4.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/4.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/4.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <div class="row mb-4 projects_display" id="hospitality">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/5.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/5.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/5.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/5.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <div class="row mb-4 projects_display" id="institutions">
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/6.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/6.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/6.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img src="./img/gallery/6s.png" class="w-100 mb-3" alt="">
+                    <h3>M/s. Shashi Prabhu & Associates.R</h3>
+                    <hr>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="color: #007BC1;" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>&nbsp;
+                            <span class="text-dark">Resi. Bldg. Nirmal Park</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="" style="color: #007BC1 !important; font-weight: 600;">DETAILS</a>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: #007BC1 !important;" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <button class="boxed-btn3">View All Projects</button>
+                </div>
+            </div>
+            <script>
+                $("#commercial").hide();
+                $("#residential").hide();
+                $("#repairs").hide();
+                $("#hospitality").hide(); 
+                $("#institutions").hide();
+            </script>
+        </div>
+    </div>
+
 
     <div class="team_area">
         <div class="container">
@@ -555,7 +1200,7 @@
                 </div>
                 <div class="col-10"
                     style="padding-left: 10px; font-size: 12px; font-weight: 600; text-transform: uppercase;">
-                    WHAT WE DO
+                    WHOM WE SUPPORT
                 </div>
             </div>
             <div class="row mb-4">
@@ -761,7 +1406,7 @@
                         </div>
                         <div class="col-10"
                             style="padding-left: 10px; font-size: 12px; font-weight: 600; text-transform: uppercase;">
-                            WHAT WE DO
+                            WHERE WE WORK
                         </div>
                     </div>
                     <div class="row mb-4">

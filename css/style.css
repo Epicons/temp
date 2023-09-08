@@ -5418,13 +5418,49 @@ h6 {
   background: none;
   font-weight: 500;
   cursor: pointer;
+  transition: 0.5s;
 }
 .boxed-btn5.active{
   background-color: #007BC1;
   color: white !important;
+  transition: 0.5s;
 }
 .stats{
   font-family: 'Archivo', sans-serif;
   color: #FFD231;
   font-size: 60px;
+}
+
+.projects_area{
+  margin: 100px 0px;
+}
+
+.projects_area .projects_area_title {
+  font-size: 42px;
+  font-weight: 600;
+  color: black;
+  line-height: 52px;
+}
+
+.projects_area .projects_area_title span {
+  color: #007BC1;
+}
+
+.project_button{
+  border-radius: 10px;
+  border: 3px solid #000;
+  padding: 10px 25px;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  background: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.project_button.active{
+  color: white;
+  background-color: #007BC1;
+  border: 3px solid #007BC1;
+  transition: 0.5s;
 }
