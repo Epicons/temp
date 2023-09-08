@@ -5375,7 +5375,56 @@ h6 {
 }
 .client_card{
   box-shadow: 0px 0px 10px 5px rgba(115, 115, 115, 0.20);
+  width: 90%;
+  height: 100%;
+  padding: 20px 40px;
+  margin-right: 0;
 }
-.clients_area{
-  margin-top: 30px;
+.carousel-control-prev, .carousel-control-next{
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.clients_area .clients_title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #007BC1;
+  line-height: 52px;
+}
+
+.project_location_area{
+  margin: 100px 0px;
+}
+
+.project_location_area .project_location_area_title {
+  font-size: 42px;
+  font-weight: 600;
+  color: black;
+  line-height: 52px;
+}
+
+.project_location_area .project_location_area_title span {
+  color: #007BC1;
+}
+
+.boxed-btn5{
+  border: 4px solid #007BC1;
+  padding: 8px 15px;
+  margin: 0px 10px;
+  color: #007BC1 !important;
+  width: 130px;
+  text-align: center;
+  background: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.boxed-btn5.active{
+  background-color: #007BC1;
+  color: white !important;
+}
+.stats{
+  font-family: 'Archivo', sans-serif;
+  color: #FFD231;
+  font-size: 60px;
 }
