@@ -5464,3 +5464,7 @@ h6 {
   border: 3px solid #007BC1;
   transition: 0.5s;
 }
+
+.slicknav_arrow{
+  display: none;
+}
