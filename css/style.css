@@ -1230,7 +1230,6 @@ h3 {
 
 /* line 8, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_about.scss */
 .about_area.add_padding {
-  padding-top: 250px;
   margin-bottom: 40px;
 }
 
@@ -1551,6 +1550,35 @@ h3 {
   font-size: 15px;
   letter-spacing: 1px;
 }
+
+
+.cta_box{
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+.cta_box h1{
+  color: black;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: 'Archivo', sans-serif;
+}
+.cta_box h3{
+  color: black;
+  font-size: 25px;
+  line-height: 30px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.cta_box p{
+  color: black;
+  line-height: 28px;
+  height: 112px;
+  overflow: hidden;
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 11, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_gallery.scss */
@@ -2112,6 +2140,30 @@ h3 {
   position: relative;
   z-index: 0;
 }
+#about_hero_area{
+  margin-top: 250px;
+}
+
+.about_feature_bg{
+ background: url(../img/about/bg.png);
+ background-size: cover;
+  background-position: top center;
+  padding: 0;
+}
+.about_feature_bg div{
+  background-color: rgba(0, 0, 0, 0.61);
+  width: 100%;
+  height: 100%; 
+}
+@media (max-width: 992px) { 
+  #about_feature_vision_title{
+    order: 2;
+  }
+  #about_feature_vision_content{
+    order: 1;
+  }
+ }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 13, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_bradcam.scss */
@@ -5358,6 +5410,11 @@ h6 {
   background-color: #192550;
   padding: 60px 0px;
 }
+.about_team_area{
+  margin: 100px 0px;
+  background-color: #192550;
+  padding: 60px 0px;
+}
 
 .boxed-btn4{
   border: 3px solid #FFD231;
@@ -5365,6 +5422,19 @@ h6 {
   padding: 15px 30px;
   font-weight: 600;
   background: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.boxed-btn4:hover {
+  background: #FFD231;
+  color: black !important;
+}
+.boxed-btn4:focus {
   outline: none;
 }
 .ceo_area{
@@ -5381,13 +5451,49 @@ h6 {
   padding: 20px 50px;
   margin-right: 0;
 }
+
+.core_card{
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 100%;
+  margin-right: 0;
+  background-color: white;
+}
 .carousel-control-prev, .carousel-control-next{
   background: none !important;
   border: none !important;
   outline: none !important;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.carousel-control-prev svg, .carousel-control-next svg{
+-webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.carousel-control-prev:hover svg, .carousel-control-next:hover svg{
+  background: #007BC1 !important;
+  color: white !important;
+  border: 1px dotted white;
+}
+
+.about_team_area .about_team_title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FFD231;
+  line-height: 52px;
 }
 
 .clients_area .clients_title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #007BC1;
+  line-height: 52px;
+}
+
+.about_usp_area .about_usp_title {
   font-size: 32px;
   font-weight: 600;
   color: #007BC1;
@@ -5410,7 +5516,7 @@ h6 {
 }
 
 .boxed-btn5{
-  border: 4px solid #007BC1;
+  border: 3px solid #007BC1;
   padding: 8px 15px;
   margin: 0px 10px;
   color: #007BC1 !important;
