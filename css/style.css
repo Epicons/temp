@@ -2141,7 +2141,12 @@ h3 {
   z-index: 0;
 }
 #about_hero_area{
-  margin-top: 250px;
+  margin-top: 300px;
+}
+
+#services_card_area{
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .about_feature_bg{
@@ -5458,6 +5463,26 @@ h6 {
   height: 100%;
   margin-right: 0;
   background-color: white;
+}
+.overlay_card{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.80);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.overlay_card:hover{
+  opacity: 1;
 }
 .carousel-control-prev, .carousel-control-next{
   background: none !important;
