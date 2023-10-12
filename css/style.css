@@ -1050,6 +1050,10 @@ h3 {
   padding-top: 29px;
   padding-bottom: 64px;
 }
+.header-area .address_bar.dark {
+  background: rgba(4, 14, 39, 1);
+}
+
 
 /* line 405, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
 .header-area .address_bar .address_menu .single_address {
@@ -2846,7 +2850,7 @@ h3 {
 
 /* line 133, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_contact.scss */
 .contact-section {
-  padding: 130px 0 100px;
+  padding: 30px 100px;
 }
 
 @media (max-width: 991px) {
@@ -3797,6 +3801,25 @@ h6 {
 .primary-checkbox input:checked + label {
   background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
+}
+.projects_overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 99%;
+  left: 0.5%;
+  position: absolute;
+  bottom: 1.5%;
+  height: 98%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s;
+}
+.projects_overlay:hover{
+  opacity: 1;
 }
 
 /* line 806, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_elements.scss */
@@ -5610,4 +5633,32 @@ h6 {
   .team_button_div{
     text-align: end;
   }
+}
+.ac-text{
+  font-size: 18px !important;
+}
+.accordion-container{
+  width: 100%;
+  margin: 0px 10px;
+}
+.ac-trigger:focus{
+color: white !important;
+}
+.ac-header{
+  outline: none !important;
+  background-color: #001F3F !important;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 0px !important;
+}
+.ac-trigger{
+  font-size: 20px !important;
+}
+.ac-header button{
+  color: white !important;
+}
+thead{
+  background-color: #001F3F;
+}
+th{
+  color: white;
 }
